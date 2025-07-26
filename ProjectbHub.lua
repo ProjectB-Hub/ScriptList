@@ -71,7 +71,7 @@ titleBar.ZIndex = 3
 titleBar.Parent = frame
 
 local title = Instance.new("TextLabel")
-title.Text = "✨ ProjectB Hub ✨"
+title.Text = " ProjectB Hub "
 title.Size = UDim2.new(1, -70, 1, 0)
 title.Position = UDim2.new(0, 10, 0, 0)
 title.BackgroundTransparency = 1
@@ -137,8 +137,8 @@ end)
 
 -- 👢 Script List
 local scripts = {
-	{ name = "🎲Egg Randomizer", url = "https://raw.githubusercontent.com/ProjectBScripts/ProjectB-Hub/refs/heads/main/random.lua" },
-	{ name = "✨Mutation Changer", url = "https://raw.githubusercontent.com/ProjectBScripts/MutationRandomizer/refs/heads/main/Random.lua" },
+	{ name = "Egg Randomizer", url = "https://raw.githubusercontent.com/ProjectBScripts/ProjectB-Hub/refs/heads/main/random.lua" },
+	{ name = "Mutation Changer", url = "https://raw.githubusercontent.com/ProjectBScripts/MutationRandomizer/refs/heads/main/Random.lua" },
 	{ name = "Fly GUI", url = "https://pastebin.com/raw/yYqF7gYk" },
 	{ name = "Script List", url = "https://pastebin.com/raw/Q1w0v9uE" }
 }
@@ -151,7 +151,7 @@ for _, data in ipairs(scripts) do
 	btn.TextColor3 = Color3.new(1, 1, 1)
 	btn.Font = Enum.Font.GothamBold
 	btn.TextSize = 16
-	btn.Text = "🚀 " .. data.name
+	btn.Text = "✨" .. data.name
 	btn.ZIndex = 4
 	btn.AutoButtonColor = false
 	btn.Parent = contentHolder
@@ -162,7 +162,7 @@ for _, data in ipairs(scripts) do
 	btn.MouseButton1Click:Connect(function()
 		local originalText = btn.Text
 		local originalColor = btn.BackgroundColor3
-		btn.Text = "✅ Script Executed!"
+		btn.Text = "Script Executed!"
 		btn.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
 		pcall(function()
 			if data.func then
