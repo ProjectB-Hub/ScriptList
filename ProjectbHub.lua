@@ -137,8 +137,8 @@ end)
 
 -- 👢 Script List
 local scripts = {
-	{ name = "Infinite Yield", url = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source" },
-	{ name = "Dark Dex", url = "https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua" },
+	{ name = "🎲Egg Randomizer", url = "https://raw.githubusercontent.com/ProjectBScripts/ProjectB-Hub/refs/heads/main/random.lua" },
+	{ name = "✨Mutation Changer", url = "https://raw.githubusercontent.com/ProjectBScripts/MutationRandomizer/refs/heads/main/Random.lua" },
 	{ name = "Fly GUI", url = "https://pastebin.com/raw/yYqF7gYk" },
 	{ name = "Script List", url = "https://pastebin.com/raw/Q1w0v9uE" }
 }
