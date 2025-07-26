@@ -6,7 +6,7 @@ local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local gui = Instance.new("ScreenGui")
-gui.Name = "GalaxyScriptHub"
+gui.Name = "ProjectB-Hub"
 gui.ResetOnSpawn = false
 gui.IgnoreGuiInset = true
 gui.Parent = playerGui
@@ -73,7 +73,7 @@ titleBar.ZIndex = 3
 titleBar.Parent = frame
 
 local title = Instance.new("TextLabel")
-title.Text = "✨ Galaxy Script Hub ✨"
+title.Text = "✨Project-B Hub✨"
 title.Size = UDim2.new(1, -70, 1, 0)
 title.Position = UDim2.new(0, 10, 0, 0)
 title.BackgroundTransparency = 1
