@@ -1,12 +1,11 @@
--- 🌌 Galaxy-Themed Script Hub with Animated RGB Border (Snake Flow)
--- Draggable UI, Galaxy particles, RGB edges, animated title
+-- 🌌 ProjectB Hub with Galaxy Theme, Pet Hatch Visualizer, and Script Buttons
 
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local gui = Instance.new("ScreenGui")
-gui.Name = "ProjectB-Hub"
+gui.Name = "GalaxyScriptHub"
 gui.ResetOnSpawn = false
 gui.IgnoreGuiInset = true
 gui.Parent = playerGui
@@ -32,10 +31,10 @@ glow.Image = "rbxassetid://5016890038"
 glow.ZIndex = 1
 glow.Parent = gui
 
--- 🪐 Main Frame
+-- 🔺 Main Frame
 local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0, 320, 0, 240)
-frame.Position = UDim2.new(0.5, -160, 0.5, -120)
+frame.Size = UDim2.new(0, 320, 0, 260)
+frame.Position = UDim2.new(0.5, -160, 0.5, -130)
 frame.BackgroundColor3 = Color3.fromRGB(10, 10, 30)
 frame.BackgroundTransparency = 0.2
 frame.BorderSizePixel = 0
@@ -58,8 +57,7 @@ rgbEdge.Parent = frame
 spawn(function()
 	while true do
 		for h = 0, 1, 0.01 do
-			local color = Color3.fromHSV(h, 1, 1)
-			rgbEdge.Color = color
+			rgbEdge.Color = Color3.fromHSV(h, 1, 1)
 			wait(0.02)
 		end
 	end
@@ -73,7 +71,7 @@ titleBar.ZIndex = 3
 titleBar.Parent = frame
 
 local title = Instance.new("TextLabel")
-title.Text = "✨ Project-B Hub ✨"
+title.Text = "✨ ProjectB Hub ✨"
 title.Size = UDim2.new(1, -70, 1, 0)
 title.Position = UDim2.new(0, 10, 0, 0)
 title.BackgroundTransparency = 1
@@ -86,9 +84,9 @@ title.Parent = titleBar
 
 spawn(function()
 	while true do
-		for h = 0, 1, 0.005 do -- slower change
+		for h = 0, 1, 0.005 do
 			title.TextColor3 = Color3.fromHSV(h, 1, 1)
-			wait(0.05) -- slower transition
+			wait(0.05)
 		end
 	end
 end)
@@ -120,7 +118,7 @@ end)
 
 -- 📦 Content Holder
 local contentHolder = Instance.new("Frame")
-contentHolder.Size = UDim2.new(1, -20, 0, 170)
+contentHolder.Size = UDim2.new(1, -20, 0, 180)
 contentHolder.Position = UDim2.new(0, 10, 0, 50)
 contentHolder.BackgroundTransparency = 1
 contentHolder.ZIndex = 3
@@ -134,14 +132,15 @@ local minimized = false
 minimizeBtn.MouseButton1Click:Connect(function()
 	minimized = not minimized
 	contentHolder.Visible = not minimized
-	frame.Size = minimized and UDim2.new(0, 320, 0, 50) or UDim2.new(0, 320, 0, 240)
+	frame.Size = minimized and UDim2.new(0, 320, 0, 50) or UDim2.new(0, 320, 0, 260)
 end)
 
--- 🗂 Script List
+-- 👢 Script List
 local scripts = {
 	{ name = "Infinite Yield", url = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source" },
 	{ name = "Dark Dex", url = "https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua" },
 	{ name = "Fly GUI", url = "https://pastebin.com/raw/yYqF7gYk" },
+	{ name = "Script List", url = "https://pastebin.com/raw/Q1w0v9uE" }
 }
 
 -- 🔘 Script Buttons
@@ -166,7 +165,11 @@ for _, data in ipairs(scripts) do
 		btn.Text = "✅ Script Executed!"
 		btn.BackgroundColor3 = Color3.fromRGB(0, 200, 100)
 		pcall(function()
-			loadstring(game:HttpGet(data.url))()
+			if data.func then
+				data.func()
+			elseif data.url then
+				loadstring(game:HttpGet(data.url))()
+			end
 		end)
 		task.delay(2, function()
 			btn.Text = originalText
