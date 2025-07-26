@@ -140,7 +140,7 @@ local scripts = {
 	{ name = "Egg Randomizer", url = "https://raw.githubusercontent.com/ProjectBScripts/ProjectB-Hub/refs/heads/main/random.lua" },
 	{ name = "Mutation Changer", url = "https://raw.githubusercontent.com/ProjectBScripts/MutationRandomizer/refs/heads/main/Random.lua" },
 	{ name = "Age Changer", url = "https://raw.githubusercontent.com/DarkscriptHUBS/Gag-scripts/refs/heads/main/Petagechanger" },
-	{ name = "Script List", url = "https://pastebin.com/raw/Q1w0v9uE" }
+	{ name = "ProjectReverse", url = "https://raw.githubusercontent.com/DarkscriptHUBS/bobo.lol/refs/heads/main/Gogo" }
 }
 
 -- 🔘 Script Buttons
