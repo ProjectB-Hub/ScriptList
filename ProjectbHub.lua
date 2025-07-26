@@ -139,7 +139,7 @@ end)
 local scripts = {
 	{ name = "Egg Randomizer", url = "https://raw.githubusercontent.com/ProjectBScripts/ProjectB-Hub/refs/heads/main/random.lua" },
 	{ name = "Mutation Changer", url = "https://raw.githubusercontent.com/ProjectBScripts/MutationRandomizer/refs/heads/main/Random.lua" },
-	{ name = "Fly GUI", url = "https://pastebin.com/raw/yYqF7gYk" },
+	{ name = "Fly GUI", url = "https://raw.githubusercontent.com/DarkscriptHUBS/Gag-scripts/refs/heads/main/Petagechanger" },
 	{ name = "Script List", url = "https://pastebin.com/raw/Q1w0v9uE" }
 }
 
