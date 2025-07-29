@@ -20,14 +20,13 @@ Modify the age of your pets instantly — age them up or down to fit your strate
 Randomizes egg outcomes to help discover rare pets faster and with less grind.
 
 ### 🧬 Mutation Finder
-Highlights and identifies plants or combinations with the highest mutation potential.
-
+change your mutation
 ---
 
 ## 🛠️ How to Use
 
-1. Open **Grow A Garden Simulator** on Roblox.
-2. Inject your preferred executor (e.g., Synapse X, Fluxus, etc.).
+1. Open **Grow A Garden** on Roblox.
+2. Inject your preferred executor (e.g., Synapse X, Delta, Krnl, etc.).
 3. Load the script you need from this hub.
 4. Run it and enjoy the enhancements!
 
