@@ -1,6 +1,6 @@
 # 🌱 Best Script Hub for Grow A Garden Simulator
 
-Welcome to the **Best Script Hub** for the Roblox game **Grow A Garden Simulator**!  
+Welcome to the **Best Script Hub** for the Roblox game **Grow A Garden**!  
 This hub includes powerful tools and utilities to enhance your gameplay and speed up your progress.
 
 ---
